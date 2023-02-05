@@ -2,6 +2,26 @@ from bindpy.placeholder import Placeholder
 
 
 def bind(func, *args, **kwargs):
+    """
+    A function that creates a new function by binding arguments
+    and keyword arguments to the input function.
+
+    Parameters:
+    fn (function): The function to which the arguments will be bound.
+    *args (tuple): Positional arguments to bind to the function.
+    **kwargs (dict): Keyword arguments to bind to the function.
+
+    Returns:
+    callable: A new function that is a combination of the input function
+                and the bound arguments.
+
+    Example:
+    >>> def my_func(arg1, arg2, arg3):
+    >>>    return arg1 + arg2 + arg3
+    >>> my_func_v2 = bind(my_func, 1, arg2=2)
+    >>> my_func_v2(arg3=3)
+    6
+    """
     def new_fn(*call_args, **call_kwargs):
         new_args = list(args)
         call_args = list(call_args)
