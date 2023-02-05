@@ -24,7 +24,6 @@ arg_9 = _9
 arg_10 = _10
 
 # used for show placeholders when a user import a package
-__all__  = []
+__all__  = ['bind', 'bind_front', 'bind_back']
 __all__ += ['_1', '_2', '_3', '_4', '_5', '_6', '_7', '_8', '_9', '_10']
 __all__ += ['arg_1', 'arg_2', 'arg_3', 'arg_4', 'arg_5', 'arg_6', 'arg_7', 'arg_8', 'arg_9', 'arg_10']
-__all__.append('bind')
