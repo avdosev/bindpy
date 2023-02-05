@@ -1,5 +1,5 @@
 import unittest
-from fbind import *
+from bindpy import *
 
 def func(p1, p2, p3, p4, p5):
     return ' '.join(map(str, [p1, p2, p3, p4, p5]))

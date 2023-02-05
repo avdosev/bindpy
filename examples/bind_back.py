@@ -1,4 +1,4 @@
-from fbind import *
+from bindpy import *
 
 
 def add(a, b, c=0):

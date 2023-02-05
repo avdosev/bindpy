@@ -1,4 +1,4 @@
-from fbind.placeholder import *
+from bindpy.placeholder import *
 
 def bind(fn, *args, **kwargs):
     def new_fn(*call_args, **call_kwargs):

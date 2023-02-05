@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "bindpy"
+version = "0.1.0"
+description = "The bindpy package allows for partial application of arguments to a function, making it easy to create specialized versions of the function with some arguments pre-filled."
+authors = ["Nikita Avdosev"]
+license = "MIT License"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
