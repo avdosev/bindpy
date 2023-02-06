@@ -1,6 +1,7 @@
 # bindpy
 
 The bindpy package allows for partial application of arguments to a function, making it easy to create specialized versions of the function with some arguments pre-filled.
+It is a better version of the Python's standard `partial` function from the `functools` package inspired by C++'s `std::bind`.
 
 ## Install
 
