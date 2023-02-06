@@ -49,3 +49,10 @@ class TestBind(unittest.TestCase):
         self.assertEqual(func_v2(1, 2, 3, 4, 5), "5 4 3 2 1")
         self.assertEqual(func_v2(1, 2, 3, 4, 5), "5 4 3 2 1")
         self.assertEqual(func_v2(1, 2, 3, 4, 5), "5 4 3 2 1")
+
+    def test_front_back_sequential_binding(self):
+        func_v2 = bind_front(bind_back(func, 4, 5), 1, 2)
+        self.assertEqual(func_v2(3), "1 2 3 4 5")
+        self.assertEqual(func_v2(3), "1 2 3 4 5")
+        self.assertEqual(func_v2(3), "1 2 3 4 5")
+
