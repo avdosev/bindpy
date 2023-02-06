@@ -22,7 +22,7 @@ The `show` function takes three arguments, `a1`, `a2` and `a3`, and returns a st
 
 Bind support placeholders : `_1`, `_2`, ... `_10`. The placeholders allow you to partially apply a function and leave certain arguments to be filled in later. This allows you to reuse the partially applied function and pass different values for the placeholder argument.
 
-Overall, bind and placeholders make it easier to create reusable and composable functions by allowing you to fix certain arguments and create new functions that take fewer arguments.
+Overall, `bind` and placeholders make it easier to create reusable and composable functions by allowing you to fix certain arguments and create new functions that take fewer arguments.
 
 ```python
 def show(a1, a2, a3):
