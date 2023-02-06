@@ -76,7 +76,7 @@ print(result)  # 50
 
 ### `bind_back` function
 
-`bind_back` also pre-specifies function arguments but with values bound to end of arg list after all others. It takes a function and key-value pairs, returns new function with values bound to end. When called with remaining args, values passed to `bind_bac`k are automatically inserted at end.
+`bind_back` also pre-specifies function arguments but with values bound to end of arg list after all others. It takes a function and key-value pairs, returns new function with values bound to end. When called with remaining args, values passed to `bind_back` are automatically inserted at end.
 
 ```python
 add_30 = bind_back(add, c=30)
@@ -92,9 +92,9 @@ result = add_10(12)  # call add(10, 12), c=0 by  default
 print(result)  # 22
 ```
 
-### sequantial binding
+### sequential binding
 
-You can combine bind_front and bind_back to create a function that has arguments pre-specified at both the front and end of the argument list. 
+You can combine `bind_front` and `bind_back` to create a function that has arguments pre-specified at both the front and end of the argument list. 
 For example, the code:
 ```python
 def func(p1, p2, p3, p4, p5):
