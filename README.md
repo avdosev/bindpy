@@ -54,4 +54,10 @@ files = ['a.txt', 'b.json']
 my_join = bind(os.path.join, '.', 'data')
 print(list(map(my_join, files))) # output ['./data/a.txt', './data/b.json']
 ```
+### `bind_front` function
 
+...
+
+### `bind_back` function
+
+...
