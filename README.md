@@ -16,6 +16,8 @@ pip install bindpy
 from bindpy import *
 ```
 
+### `bind` function
+
 The `show` function takes three arguments, `a1`, `a2` and `a3`, and returns a string composed of their values separated by spaces. The `show_10` function is a partially applied version of `show`, with `a2` bound to `_1`, `a1` bound to `_2` and `a3` bound to `10`.
 
 Bind support placeholders : `_1`, `_2`, ... `_10`. The placeholders allow you to partially apply a function and leave certain arguments to be filled in later. This allows you to reuse the partially applied function and pass different values for the placeholder argument.
