@@ -92,7 +92,7 @@ result = add_10(12)  # call add(10, 12), c=0 by  default
 print(result)  # 22
 ```
 
-### sequential binding
+### Sequential binding
 
 You can combine `bind_front` and `bind_back` to create a function that has arguments pre-specified at both the front and end of the argument list. 
 For example, the code:
@@ -101,14 +101,14 @@ def func(p1, p2, p3, p4, p5):
     return " ".join(map(str, [p1, p2, p3, p4, p5]))
     
 b_func = bind_front(bind_back(func, 4, 5), 1, 2)
-print(bfunc(3)) # 1 2 3 4 5
+print(b_func(3)) # 1 2 3 4 5
 ```
 
 can be replaced with:
 
 ```python
 b_func_v2 = bind(1, 2, _1, 4, 5) # using placeholder *_1*
-print(bfunc(3)) # 1 2 3 4 5
+print(b_func_v2(3)) # 1 2 3 4 5
 ```
 
 ----
