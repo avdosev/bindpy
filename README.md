@@ -107,7 +107,7 @@ print(b_func(3)) # 1 2 3 4 5
 can be replaced with:
 
 ```python
-b_func_v2 = bind(1, 2, _1, 4, 5) # using placeholder *_1*
+b_func_v2 = bind(func, 1, 2, _1, 4, 5) # using placeholder *_1*
 print(b_func_v2(3)) # 1 2 3 4 5
 ```
 
